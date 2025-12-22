@@ -27,6 +27,13 @@ form{
   display: flex;
   gap: 10px;
 }
+ul{
+  margin-top: 20px;
+  list-style-type: disc;
+  padding-left: 40px;
+  font-size: 1.2rem;
+  
+}
 form > input{
   width: 320px;
   height: 32px;
@@ -45,4 +52,13 @@ button{
   border-radius: 6px;
   font-size: 1.1rem;
   border: none;
+}
+ul {
+  margin-top: 20px;
+  list-style-type: disc;
+  font-size: 1.2rem;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  
 }

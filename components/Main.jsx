@@ -1,8 +1,17 @@
 import '../src/index.css'
+import React from 'react'
 export default function Main(){
+    const[ingredients, setIngredients]= React.useState ([])
+ const ingredientElements = ingredients.map((ingredient, index) => (
+        <li key={index}>{ingredient}</li>
+    ))
+   
     function handleSubmit(event){
         event.preventDefault()
-        console.log("submitted")
+        const newIngredient = event.target.ingredient.value
+        setIngredients(prevIngredients => [...prevIngredients, newIngredient])
+        event.target.ingredient.value = ''
+        
     }
     return(
     <main>
@@ -15,6 +24,9 @@ export default function Main(){
             /> 
             <button>+ Add ingredients</button>
         </form>
+        <ul>
+            {ingredientElements}
+        </ul>
     </main>
     )
 } 
