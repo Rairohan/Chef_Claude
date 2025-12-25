@@ -2,7 +2,7 @@ import '../src/index.css'
 import React from 'react'
 export default function Main(){
     const[ingredients, setIngredients]= React.useState ([])
- const ingredientElements = ingredients.map((ingredient, index) => (
+    const ingredientElements = ingredients.map((ingredient, index) => (
         <li key={index}>{ingredient}</li>
     ))
    
@@ -20,7 +20,7 @@ export default function Main(){
             aria-label='Add ingredient'
             name='ingredient'
             /> 
-            <button>+ Add ingredients</button>
+            <button>+ Add Ingredients</button>
         </form>
         <ul>
             {ingredientElements}
