@@ -114,3 +114,7 @@ h2{
     font-size: 0.875rem;
     cursor: pointer;
 }
+.claude-recipe-suggestion{
+    max-width: 700px;
+    margin: 20px auto;
+}
